@@ -1,0 +1,130 @@
+body {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.emoji-mood-tracker {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+.mood-select-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.emoji-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.emoji-buttons button {
+  border: none;
+  background-color: transparent;
+  font-size: 48px;
+  cursor: pointer;
+  margin: 0 10px;
+  outline: none;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+  position: relative;
+}
+
+.emoji-buttons button:hover {
+  transform: scale(1.2);
+}
+
+.emoji-buttons button:focus {
+  outline: none;
+}
+
+.emoji-buttons button:hover::after {
+  content: attr(data-emotion);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.mood-details-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.mood-history-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.mood-history-list li {
+  margin-bottom: 10px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.delete-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
