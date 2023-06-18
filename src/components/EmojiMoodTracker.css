@@ -75,3 +75,7 @@ h3 {
   border-radius: 4px;
   font-size: 12px;
 }
+
+.mood-details-container ul {
+  text-align: left;
+}
