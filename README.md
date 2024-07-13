@@ -14,8 +14,3 @@ Music Recommendation based on Mood and Emojis:
 
 ![UI1](https://github.com/LabibBhuiyan/moodify/assets/129128529/056ccf01-e774-4222-8ec0-2db840fb1d8a)
 
-## Future Features:
-- Get music recommendation based on any type of emoji.
-- Utilize an image processing API or machine learning library (such as TensorFlow, OpenCV) to detect facial expressions/emotions in images.
-- Develop an algorithm that can accurately recognize emotions like happiness, sadness, anger, surprise, etc and relate it to a emoji mood.
-- Based on the emoji mood, create a music recommendation.
